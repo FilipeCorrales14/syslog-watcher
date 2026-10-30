@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Tentativas de login SSH falhando",
+    "pattern": "Failed password|authentication failure",
+    "threshold": { "count": 5, "windowS": 60 },
+    "cooldownS": 600
+  },
+  {
+    "name": "Interface de rede caiu",
+    "pattern": "(changed state to down|link down|Line protocol on Interface .* down)",
+    "maxSeverity": 5,
+    "cooldownS": 120
+  },
+  {
+    "name": "Interface oscilando",
+    "pattern": "(changed state to (up|down)|link (up|down))",
+    "threshold": { "count": 6, "windowS": 300 },
+    "cooldownS": 900
+  },
+  {
+    "name": "Erro crítico em qualquer equipamento",
+    "maxSeverity": 2,
+    "cooldownS": 300
+  }
+]
