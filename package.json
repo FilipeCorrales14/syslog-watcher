@@ -1,0 +1,17 @@
+{
+  "name": "syslog-watcher",
+  "version": "0.1.0",
+  "description": "Coletor syslog (UDP) com armazenamento em SQLite, busca via API e alertas por regras.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/index.js",
+    "enviar-teste": "node scripts/enviar-teste.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "author": "Filipe Corrales Cardoso",
+  "license": "MIT"
+}
